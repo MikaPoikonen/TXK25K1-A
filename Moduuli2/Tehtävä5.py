@@ -9,4 +9,3 @@ kokonaisluku =int(kokonaispaino)
 desimaali=(kokonaispaino- kokonaisluku)*1000
 print(f"Kiloa: {kokonaisluku}")
 print(f"Grammat: {desimaali:.2f}")
-
