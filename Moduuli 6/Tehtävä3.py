@@ -1,5 +1,5 @@
 def maara():
-    litra = gallona * 3, 745
+    litra = gallona * 3,785
     print(f" {litra} litraa")
     return
 while True:
