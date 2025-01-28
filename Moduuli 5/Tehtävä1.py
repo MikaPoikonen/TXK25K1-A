@@ -1,12 +1,8 @@
 from random import randint
-arvottu = []
-nopat = int (input("Anna noppien määrä"))
+maara = int(input("Anna arpakuutioiden määrä: "))
+summa = 0
 
+for i in range(maara):
+    summa += randint(1, 6)
 
-
-for i in range(nopat):
-    arvottu_luku = randint(1, 6)
-    arvottu.append(arvottu_luku)
-    print(i)
-for luku in arvottu:
-    print (luku)
+print("Arpakuutioiden summa on:", + summa)
