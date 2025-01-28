@@ -2,6 +2,7 @@ import math
 def suhde(pizza,pizza2):
     if pizza>pizza2:
         print ("pizza 2 on halvempi")
+    elif pizza==pizza2:print("Pizzat ovat yhtä halpoja")
     else: print("Pizza 1 on halvempi")
     return
 halkaisija1=float(input("Anna halkaisija:" ))
