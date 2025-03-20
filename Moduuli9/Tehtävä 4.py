@@ -10,7 +10,7 @@
 # Lopuksi tulostetaan kunkin auton kaikki ominaisuudet selkeäksi taulukoksi muotoiltuna.
 from random import randint
 class Auto():
-    def __init__(self,rekisterinumero: str,huippunopeus = randint(100,200),nopeus = 0,matka = 0):
+    def __init__(self,rekisterinumero: str,huippunopeus,nopeus = 0,matka = 0):
         self.rekisterinumero = rekisterinumero
         self.huippunopeus = huippunopeus
         self.matka = matka
