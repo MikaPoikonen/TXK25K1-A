@@ -5,7 +5,6 @@ class Auto:
         self.tämänhetkinen_nopeus = tämänhetkinen_nopeus
         self.kuljettu_matka = kuljettu_matka
 
-
     def kiihdytä(self,luku:int):
         self.tämänhetkinen_nopeus += luku
         if self.tämänhetkinen_nopeus > self.huippunopeus:
