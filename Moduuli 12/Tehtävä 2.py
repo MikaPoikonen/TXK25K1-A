@@ -1,6 +1,6 @@
 import requests
 
-api ="f705c9641c740e04e617f0c023707357"
+api =""
 kaupunki = input("Anna kaupunki")
 
 osoite = f"http://api.openweathermap.org/geo/1.0/direct?q={kaupunki}&limit=5&appid={api}"
@@ -19,7 +19,9 @@ try:
         osoite2 = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api}"
         vastaus2 = requests.get(osoite2)
         data2 = vastaus2.json()
-        print(data2["main"])
+        if len(data2["weather"]) > 0:
+
+            print(data2["weather"][0]["main"])
         lampotila = celsius(data2["main"]["temp"])
         print(f"Lämpötila  on: {lampotila:.2} astetta")
 
