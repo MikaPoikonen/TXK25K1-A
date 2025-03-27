@@ -29,9 +29,8 @@ class Lehti(Julkaisu):
 
 
 kaikki = []
-kaikki.append(Julkaisu("Karkkikirja"))
-kaikki.append(Kirja("Keittokirja", "Martti Servo", 178))
-kaikki.append(Lehti("Tintti", "John Wicked"))
+kaikki.append(Kirja("Hytti n:o 6", "Rosa Liksom", 200))
+kaikki.append(Lehti("Aku.Ankka", "Aki Hyyppä"))
 
 for t in kaikki:
     t.tulosta_tiedot()
